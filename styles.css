@@ -3,6 +3,7 @@ body, html{
     margin:0px;
     padding: 0px;
     overflow: hidden;
+    
 }
 
 .button{
@@ -16,9 +17,9 @@ body, html{
     color:white;
     text-decoration: none;
     padding:1em 1.5em;
-    letter-spacing: 0.001cm;
+    
     opacity: 0%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Open Sans', sans-serif;
     font-size: small;
 }
 
@@ -35,9 +36,9 @@ body, html{
     position:absolute;
     bottom: 5em;
     margin-left: 36%;;
-    font-family: 'Georgia', Courier, monospace;
+    font-family: 'Open Sans', sans-serif;
     font-size: xx-large;
-    font-weight:lighter;
+    font-weight:200;
     letter-spacing: 0.05cm;
     color: rgba(255, 255, 255, 0.875);
     
@@ -82,7 +83,7 @@ body, html{
 .span-1{
     display:inline-block;
     
-    margin-left: 9%;
+    margin-left: 12%;
     
     height: 200px;
     
@@ -91,7 +92,7 @@ body, html{
 .span-2{
     display:inline-block;
     
-    margin-left: 12.4%;
+    margin-left: 10.1%;
     
     height: 200px;
     
@@ -117,6 +118,7 @@ body, html{
     height: 100px;
     width:250px;
     margin-top:23px;
+    font-size: medium;
 
 }
 
@@ -138,18 +140,18 @@ body, html{
     margin-left: 103px;
     text-decoration: double;
     color: rgb(219, 207, 191);
-    font-size: xx-large;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
 
 }
 
 .Iphone{
-    margin-left: 72px;
+    margin-left: 85px;
 }
 
 .Accessories{
-    margin-left: 24.5px;
+    margin-left: 25%;
 }
 
 .link:hover{

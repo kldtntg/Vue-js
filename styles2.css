@@ -4,6 +4,7 @@ body{
     background-color: rgba(101, 101, 101, 0.135);
     
     
+    
 }
 
 .bigMac{
@@ -13,7 +14,7 @@ body{
     text-align: center;
     background-color: transparent;
     font-size: xxx-large;
-    font-family: 'Arial', Courier, monospace;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 350;
     
     
@@ -24,6 +25,7 @@ body{
     position: absolute;
     padding-left: 46%;
     padding-top: 2.3%;
+    font-family: 'Open Sans', sans-serif;
     
 
 }
@@ -90,7 +92,7 @@ body{
     text-align: center;
     width: 100%;
     padding-bottom: 2%;
-    font-family:'Arial', Courier, monospace;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 5;
     letter-spacing: 0.015cm;
     transition: 1s;
@@ -104,8 +106,8 @@ body{
 .product-price{
     text-align: center;
     padding-bottom: 10%;
-    font-family:'Arial', Courier, monospace;
-    font-weight: 5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
     letter-spacing: 0.015cm;
 }
 
