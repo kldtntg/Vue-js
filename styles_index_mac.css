@@ -1,0 +1,198 @@
+body, html{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0cm;
+    margin: 0cm;
+    /* background-color: rgba(95, 59, 59, 0.382); */
+    background-color: rgba(189, 215, 238, 0.354);
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    row-gap: 5%;
+    grid-template-rows: 100px 1fr 1fr;
+    text-align: center;
+    
+}
+
+.MB-Pro{
+    position: relative;
+    background-color: transparent;
+    height: 100%
+    
+}
+
+.MB-Pro-small{
+
+    margin-top: 5%;
+    font-size: xx-large;
+    font-family:'Arial', Courier, monospace;
+    font-weight:lighter;
+    
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.Image{
+    background-color: rgba(201, 201, 201, 0.512);
+    padding: 0%;
+    
+}
+
+
+
+.last{
+    background-color: rgba(116, 113, 109, 0.353);
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.button{
+    position: absolute;
+    padding: 10px;
+    margin-top: 1.5%;
+    margin-left: -3.5%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    box-shadow: 0.05px 0.05px 0.1px  rgba(128, 128, 128, 0.347);
+    transition: 1s
+
+    
+}
+
+.button:hover{
+    box-shadow: 0.05px 0.05px 1px 10px rgba(128, 128, 128, 0.347);
+}
+/* Hide the images by default */
+.mySlides {
+
+  display: none;
+  object-fit: cover;
+  height:60vh;
+  max-width: 100%;
+  overflow: scroll;
+  transform:scale(0.80);
+  
+}
+img{
+    max-width:100%;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-right: 10%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev{margin-left: -40%;
+}
+    
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -120%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(111, 111, 111);
+    border-radius: 10px;
+  }
+
+
+  @keyframes appear{
+    0% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    }
+  .MB-Pro{
+      animation: 1.5s ease-out 1 appear;}
