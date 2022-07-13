@@ -99,7 +99,7 @@ export default {
       });
     } else {
       this.animations.forEach((e) => {
-        this.animation(0, e.ref);
+        this.animation(200, e.ref);
       });
     }
   },
