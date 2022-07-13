@@ -1,9 +1,314 @@
 <template>
-  <div>Home View</div>
+  <div class="first-div">
+    <div class="second-div">
+      <span class="hidden span span-1" ref="hi_1">
+        <!-- <a class="link Mac" href="index2.html" target="_blank"> Mac</a> -->
+
+        <router-link :to="{ name: 'products' }" class="link Mac">
+          Mac</router-link
+        >
+      </span>
+
+      <span class="hidden span span-2" ref="hi_2">
+        <!-- <a class="link Iphone" href="index2.html" target="_blank"> Iphone</a> -->
+
+        <router-link :to="{ name: 'products' }" class="link Iphone">
+          Iphone
+        </router-link>
+      </span>
+
+      <span class="hidden span span-3" ref="hi_3">
+        <!-- <a class="link Accessories" href="index2.html" target="_blank">
+          Accessories</a
+        > -->
+
+        <router-link :to="{ name: 'products' }" class="link Accessories">
+          Accessories</router-link
+        >
+      </span>
+    </div>
+
+    <img
+      class="top-image"
+      ref="top-img"
+      src="https://www.apple.com/v/apple-events/home/s/images/september-2021/meta/og__fodnljjkwl6y.jpg?202110070152"
+      alt="Apple-event-image"
+    />
+
+    <p ref="hi_5" class="header">Welcome to Apple Products</p>
+
+    <div class="third-div">
+      <p class="copyright">
+        Copyright © 2022 JungleCok Inc.. All rights reserved.
+      </p>
+
+      <a
+        class="button"
+        ref="hi_4"
+        href="https://www.apple.com/ca/"
+        target="_blank"
+      >
+        Learn more about Apple</a
+      >
+    </div>
+  </div>
 </template>
 
 <script>
+import { store } from "./store.js";
 export default {
   name: "HomeView",
+
+  data() {
+    return {
+      store,
+      message: "ok",
+      animations: [
+        {
+          delay: 2000,
+          ref: "hi_1",
+        },
+        {
+          delay: 2500,
+          ref: "hi_2",
+        },
+        {
+          delay: 3200,
+          ref: "hi_3",
+        },
+        {
+          delay: 3200,
+          ref: "hi_4",
+        },
+        {
+          delay: 1500,
+          ref: "hi_5",
+        },
+        {
+          delay: 0,
+          ref: "top-img",
+        },
+      ],
+    };
+  },
+  mounted() {
+    if (store.firstTime) {
+      this.animations.forEach((e) => {
+        this.animation(e.delay, e.ref);
+        store.firstTime = false;
+      });
+    } else {
+      this.animations.forEach((e) => {
+        this.animation(0, e.ref);
+      });
+    }
+  },
+  methods: {
+    animation(delay, ref) {
+      setTimeout(() => {
+        this.$refs[ref].style.opacity = "100%";
+      }, delay);
+    },
+  },
 };
 </script>
+
+<style scoped>
+body,
+html {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.first-div {
+  position: absolute;
+}
+
+.button {
+  transition: 2s;
+  position: absolute;
+  bottom: 2em;
+  right: 4em;
+  border: 0.001cm solid rgba(82, 74, 74, 0.666);
+  background-color: transparent;
+  border-radius: 1.5em;
+  color: white;
+  text-decoration: none;
+  padding: 1em 1.5em;
+
+  opacity: 0%;
+  font-family: "Open Sans", sans-serif;
+  font-size: small;
+}
+
+.button:hover {
+  box-shadow: 0 0.1em 0.1em;
+  transform: scale(0.96);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(106, 99, 239, 0.128),
+    rgba(206, 180, 239, 0.155),
+    rgba(57, 51, 51, 0.049)
+  );
+}
+
+.header {
+  position: absolute;
+  bottom: 5em;
+  margin-left: 36%;
+  font-family: "Open Sans", sans-serif;
+  font-size: xx-large;
+  font-weight: 200;
+  letter-spacing: 0.05cm;
+  color: rgba(255, 255, 255, 0.875);
+}
+
+.top-image {
+  transition: 1s;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 2% 35%;
+  opacity: 0.5;
+}
+
+.first-div {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.second-div {
+  position: absolute;
+  overflow: hidden;
+  margin: 0%;
+  background-color: transparent;
+  height: 35vh;
+  width: 100%;
+}
+
+.span-1 {
+  display: inline-block;
+
+  margin-left: 12%;
+
+  height: 200px;
+}
+
+.span-2 {
+  display: inline-block;
+
+  margin-left: 10.1%;
+
+  height: 200px;
+}
+
+.span-3 {
+  display: inline-block;
+
+  margin-left: 12%;
+
+  height: 200px;
+}
+
+.span {
+  transition: 2s;
+  /* border: 1px solid rgb(194, 182, 180) 
+    ;
+    box-shadow: 1px 1px rgb(178, 170, 159); */
+  background-color: transparent;
+  opacity: 0%;
+  position: relative;
+  height: 100px;
+  width: 250px;
+  margin-top: 60px;
+  font-size: medium;
+}
+
+.span:hover {
+  /* background-image:
+    linear-gradient(to bottom, rgba(106, 99, 239, 0.439), rgba(208, 180, 239, 0.5),
+    rgba(57, 51, 51, 0.544)); */
+  background-color: rgba(228, 168, 206, 0.104);
+  /* box-shadow: 4px 4px rgb(178, 170, 159); */
+}
+
+.link {
+  transition: 1s;
+  position: absolute;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 103px;
+  text-decoration: double;
+  color: rgb(219, 207, 191);
+  font-size: x-large;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+
+.Iphone {
+  margin-left: 89.4px;
+}
+
+.Accessories {
+  margin-left: 25%;
+}
+
+.link:hover {
+  color: rgb(241, 232, 219);
+  box-shadow: 2px 1px rgb(178, 170, 159);
+}
+
+.third-div {
+  overflow: hidden;
+}
+
+.copyright {
+  /* position: absolute;
+    margin-left: 72vh;
+    margin-top: 4vh;
+    color:rgb(82, 81, 79);
+    font-weight: 100;
+    font-size: small; */
+
+  position: absolute;
+  bottom: 0em;
+  left: 2em;
+  font-family: "Georgia", Courier, monospace;
+  font-size: x-small;
+  font-weight: lighter;
+
+  color: rgba(250, 238, 238, 0.875);
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+p {
+  opacity: 0%;
+  transition: 2s;
+}
+</style>
