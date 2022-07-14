@@ -37,7 +37,7 @@
         <div class="mySlides fade">
           <div class="numbertext">4 / 5</div>
           <img
-            src="./..\assets\Screenshot (70).png"
+            src="https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2019/11/16-inch-MacBook-Pro-2019-1.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1"
             alt="Macbook Pro 14' 2021 specs"
           />
         </div>
@@ -45,7 +45,7 @@
         <div class="mySlides fade">
           <div class="numbertext">5 / 5</div>
           <img
-            src="./..\assets\Screenshot (71).png"
+            src="https://ben.com.vn/tin-tuc/wp-content/uploads/2021/10/MacBook-Pro-14-va-MacBook-Pro-16-4.jpg"
             alt="Macbook Pro 14' 2021 spec"
           />
         </div>
