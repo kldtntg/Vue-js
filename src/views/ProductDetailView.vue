@@ -45,7 +45,7 @@
         <div class="mySlides fade">
           <div class="numbertext">5 / 5</div>
           <img
-            src="https://ben.com.vn/tin-tuc/wp-content/uploads/2021/10/MacBook-Pro-14-va-MacBook-Pro-16-4.jpg"
+            src="https://photos5.appleinsider.com/gallery/35888-66255-13-Inch-MacBook-Pro-xl.jpg"
             alt="Macbook Pro 14' 2021 spec"
           />
         </div>
