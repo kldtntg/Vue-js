@@ -78,7 +78,10 @@ export default {
   name: "ProductDetailViews",
 
   mounted() {
-    this.showSlides(store.slideIndex), this.moveSlides(), this.noscroll();
+    this.showSlides(store.slideIndex), this.noscroll();
+  },
+  created() {
+    this.moveSlides();
   },
 
   methods: {
@@ -94,6 +97,7 @@ export default {
       );
     },
     moveSlides() {
+      console.log("moveSlides is called");
       document.addEventListener("keyup", (event) => {
         const name = event.key;
         if (name === "ArrowRight") {
@@ -125,6 +129,9 @@ export default {
     },
     plusSlides(n) {
       (store.slideIndex += n), this.showSlides(store.slideIndex);
+      console.log(
+        `plusSlides is called, current slideIndex is ${store.slideIndex}`
+      );
     },
     currentSlide(n) {
       (store.slideIndex = n), this.showSlides(store.slideIndex);

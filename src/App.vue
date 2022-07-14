@@ -4,7 +4,7 @@
       <router-link :to="{ name: 'home' }">Home</router-link>
       <router-link :to="{ name: 'products' }"> Product List</router-link>
       <router-link :to="{ name: 'product-detail' }">
-        Product Detail</router-link
+        Product Details</router-link
       >
     </nav>
     <router-view></router-view>
