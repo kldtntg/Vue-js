@@ -4,8 +4,10 @@ import VueRouter from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import ProductDetailView from "@/views/ProductDetailView.vue";
 import ProductListView from "@/views/ProductListView.vue";
+import VueMeta from "vue-meta";
 
 Vue.use(VueRouter);
+Vue.use(VueMeta);
 
 const routes = [
   {

@@ -87,6 +87,9 @@
 <script>
 export default {
   name: "ProductListViews",
+  metaInfo: {
+    title: "Product Listing Page",
+  },
   data() {
     return {
       message: "ok",

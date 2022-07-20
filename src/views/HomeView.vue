@@ -58,7 +58,9 @@
 import { store } from "./store.js";
 export default {
   name: "HomeView",
-
+  metaInfo: {
+    title: "Home Page",
+  },
   data() {
     return {
       store,

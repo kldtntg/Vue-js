@@ -11,6 +11,33 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "App",
+  metaInfo() {
+    return {
+      title: "Apple Product Reseller Page",
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          name: "description",
+          content:
+            "Reselling Apple products. Connects users to official Apple website for further research.",
+        },
+        {
+          property: "og:title",
+          content: "Apple Product Reseller Page",
+        },
+        { property: "og:site_name", content: "Apple Products" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" },
+      ],
+    };
+  },
+};
+</script>
+
 <style>
 #app {
   position: relative;

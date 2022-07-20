@@ -76,6 +76,9 @@
 import { store } from "./store.js";
 export default {
   name: "ProductDetailViews",
+  metaInfo: {
+    title: "Product Detail Page",
+  },
 
   mounted() {
     this.showSlides(store.slideIndex), this.noscroll();
